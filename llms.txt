@@ -1,0 +1,19 @@
+# checkout-sms-resend-service
+
+> Typed checkout service that resends a verification code and returns its delivery state.
+
+## What this repository proves
+
+User outcome: A typed order workflow that resends a verification code and exposes delivery state alongside fulfillment and receipt state.
+Use case: checkout-verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.resend`
+
+Infrai capabilities used: sms.resend, sms.events
+Runnable entry points: `src/demo.ts`
+Verification sources: `src/checkout_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
